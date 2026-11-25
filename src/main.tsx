@@ -81,9 +81,9 @@ const roleOptions = [
     persona: "需求夹克",
     visual: "generative",
     images: {
-      male: "/assets/role-image-15.png",
-      female: "/assets/role-image-20.png",
-      unknown: "/assets/role-image-15.png",
+      male: `${import.meta.env.BASE_URL}assets/role-image-15.png`,
+      female: `${import.meta.env.BASE_URL}assets/role-image-20.png`,
+      unknown: `${import.meta.env.BASE_URL}assets/role-image-15.png`,
     },
     equipment: ["AI 机会定义", "真实评测集", "上线闭环"],
   },
@@ -94,9 +94,9 @@ const roleOptions = [
     persona: "工作流耳机",
     visual: "agent",
     images: {
-      male: "/assets/role-image-17.png",
-      female: "/assets/role-image-21.png",
-      unknown: "/assets/role-image-17.png",
+      male: `${import.meta.env.BASE_URL}assets/role-image-17.png`,
+      female: `${import.meta.env.BASE_URL}assets/role-image-21.png`,
+      unknown: `${import.meta.env.BASE_URL}assets/role-image-17.png`,
     },
     equipment: ["多步工作流", "工具调用编排", "人工接管"],
   },
@@ -107,9 +107,9 @@ const roleOptions = [
     persona: "模型连帽衫",
     visual: "llm",
     images: {
-      male: "/assets/role-image-18.png",
-      female: "/assets/role-image-22.png",
-      unknown: "/assets/role-image-18.png",
+      male: `${import.meta.env.BASE_URL}assets/role-image-18.png`,
+      female: `${import.meta.env.BASE_URL}assets/role-image-22.png`,
+      unknown: `${import.meta.env.BASE_URL}assets/role-image-18.png`,
     },
     equipment: ["上下文编排", "版本对比", "Bad Case 归因"],
   },
@@ -120,9 +120,9 @@ const roleOptions = [
     persona: "指标披风",
     visual: "analyst",
     images: {
-      male: "/assets/role-image-19.png",
-      female: "/assets/role-image-23.png",
-      unknown: "/assets/role-image-19.png",
+      male: `${import.meta.env.BASE_URL}assets/role-image-19.png`,
+      female: `${import.meta.env.BASE_URL}assets/role-image-23.png`,
+      unknown: `${import.meta.env.BASE_URL}assets/role-image-19.png`,
     },
     equipment: ["AI 指标体系", "采纳修改率", "实验归因"],
   },
@@ -352,7 +352,7 @@ function LandingPage({ onStart }: { onStart: () => void }) {
           </p>
         </div>
         <div className="landingMascot" aria-hidden="true">
-          <img src="/assets/landing-role-collage.png" alt="" />
+          <img src={`${import.meta.env.BASE_URL}assets/landing-role-collage.png`} alt="" />
         </div>
       </section>
 
